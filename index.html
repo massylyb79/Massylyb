@@ -39,9 +39,24 @@
                 </li>
             </ul>
         </div>
-        <div class="nav-button">
-            <button class="btn"> Télécharger CV <i class="uil uil-file-alt"></i></button>
-        </div>
+<div class="nav-button">
+    <button class="btn" onclick="downloadCV()">
+        Télécharger CV <i class="uil uil-file-alt"></i>
+    </button>
+</div>
+
+<script>
+function downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'CV_Massinissa_Youbi_EN.pdf';
+    link.download = 'CV_Massinissa_Youbi.pdf';
+    link.style.display = 'none';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+
         <div class="nav-menu-btn">
             <i class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
@@ -58,23 +73,33 @@
                 <p>Je suis <span class="typedText"></span></p>
             </div>
             <div class="featured-text-info">
-                <p>Étudiant en Master 2 en administration des réseaux informatiques, 
-                    passionné par la sécurité informatique et le cloud computing. 
-                    Actuellement à la recherche de nouvelles opportunités professionnelles dans l'IT.
-                    Disponible et motivé pour contribuer à des projets innovants.
+                <p>Titulaire d’un Master en Administration et Sécurité des Réseaux, je possède une expertise technique solide appuyée par une expérience en entreprise. Passionné par la cybersécurité et les technologies cloud, je m’intéresse aux approches DevSecOps, aux environnements cloud sécurisés ainsi qu’à la recherche appliquée en sécurité, machine learning et big data. Je suis actuellement à la recherche de nouvelles opportunités dans le cloud et/ou la cybersécurité.
 
                 </p>
             </div>
             <div class="featured-text-btn">
-                <button class="btn blue-btn">Recrutez-moi</button>
-                <button class="btn"> Télécharger CV <i class="uil uil-file-alt"></i></button>
+                <button class="btn blue-btn">Contactez-moi</button>
+               <button class="btn" onclick="window.open('CV_Massinissa_Youbi_EN.pdf', '_blank')">
+    Télécharger CV <i class="uil uil-file-alt"></i>
+</button>
             </div>
-            <div class="social_icons">
-                <div class="icon"><i class="uil uil-instagram"></i></div>
-                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                <div class="icon"><i class="uil uil-facebook"></i></div>
-                <div class="icon"><i class="uil uil-github-alt"></i></div>
-            </div>
+
+<div class="social_icons">
+    <a href="https://www.instagram.com" target="_blank" class="icon">
+        <i class="uil uil-instagram"></i>
+    </a>
+    <a href="https://dz.linkedin.com/in/massinissa-youbi-950288319" target="_blank" class="icon">
+        <i class="uil uil-linkedin-alt"></i>
+    </a>
+    <a href="https://www.facebook.com/massylyb.99" target="_blank" class="icon">
+        <i class="uil uil-facebook"></i>
+    </a>
+<a href="https://github.com/massylyb79" target="_blank" class="icon">
+        <i class="uil uil-github-alt"></i>
+    </a>
+    
+</div>
+
           </div>
           <div class="featured-image">
             <div class="image">
@@ -137,7 +162,7 @@
                         <span>Fortigate</span>
                         <span>Vphere</span>
                         <span>veeam</span>
-                        <span>AWS</span>
+                        <span>Wazuh</span>
                         <span>Azure</span>
                         <span>Docker</span>
                         <span>Kubernetes</span>
@@ -192,18 +217,18 @@
        <section class="section" id="contact">
           <div class="top-header">
             <h1>Ouvrons le Dialogue ? Prêt à Faire la Différence</h1>
-            <span>Vous souhaitez en savoir plus sur la façon dont mes compétences peuvent bénéficier à votre entreprise ? N'hésitez pas à me contacter pour discuter de toutes les opportunités de collaboration.</span>
+            <span>Envie de renforcer la sécurité de vos systèmes avec un profil passionné et engagé ? Je serais ravi d’échanger avec vous sur toute opportunité. N’hésitez pas à me contacter pour en discuter !</span>
           </div>
           <div class="row">
              <div class="col">
                 <div class="contact-info">
                     <h2> Me joindre <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: massyl@contact.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: +213 xxx xxx xxx</p>
+                    <p><i class="uil uil-envelope"></i> Email: youbimassinissa@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +213 666586179</p>
                 </div>
              </div>
                 <div class="col">
-                  <form class="form-control" action="index.php" method="post">
+                  <form class="form-control" action="mailto:youbimassinissa@gmail.com" method="post" enctype="text/plain">
                    <div class="form-inputs">
                    <input type="text" class="input-field" name="name" placeholder="Nom" required>
                    <input type="email" class="input-field" name="email" placeholder="Email" required>
